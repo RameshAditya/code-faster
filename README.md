@@ -6,6 +6,8 @@
 ## What Code-Faster is
 #### Code Faster is a Sublime Text 3 Plugin developed with the intent of fetching problem statements directly into the sublime text editor, without needing to open a browser.
 
+![](https://github.com/RameshAditya/code-faster/blob/master/sample.gif)
+
 ## What it does
 The problem statements are fetched from the Codeforces programming platform (www.codeforces.com) due to their reputation in the field of algorithmic contests. In addition, their API also lent itself well for the purpose of this plug-in.
 

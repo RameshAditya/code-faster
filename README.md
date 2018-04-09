@@ -9,10 +9,17 @@
 ## What it does
 The problem statements are fetched from the Codeforces programming platform (www.codeforces.com) due to their reputation in the field of algorithmic contests. In addition, their API also lent itself well for the purpose of this plug-in.
 
+## Set up instructions
+Assuming you have Sublime Text 3 set up, head over to `C:/Users/{YOUR_USERNAME}/Appdata/Roaming/Sublime Text 3/Packages/`
+
+and paste the folder 'Code-Faster-A' in this directory.
+
+Now, open Sublime Text 3 and along the menu bar, to the right of the `Help` option, you should notice a new option `Codeforces for Adi`, and if you do, rejoice!
+
 ## How it works
 
 ####  How it identifies the contest
-Codeforces has a standard template of contest information -> Contest Number + Letter
+Codeforces has a standard template of contest information -> `Contest Number + Letter`
 
 This pair uniquely defines every question on the platform. 
 
@@ -28,8 +35,8 @@ The advantage of using codeforces as the target platform is that the standard pr
 The BeautifulSoup module in python, allows for web scraping. Consequently, after acquiring the correct link by leveraging the codeforces API, BeautifulSoup was used to scrape the problem statement off the webpage.
 
 ## Scope for improvements
-* The parsing of the problem statements of the URL was tedious, and while an alternative would be to remove all the text between every '<' and '>' pair, a quick fix was implemented due to lack of time. 
+* The parsing of the problem statements of the URL was tedious, and while an alternative would be to remove all the text between every `<` and `>` pair, a quick fix was implemented due to lack of time. 
 
-* In addition, it's probably advisable to cache the requests being made as the JSON obtained in response is pretty large in size, and in runtime requires ~3-4 seconds to work.
+* In addition, it's probably advisable to cache the requests being made as the JSON obtained in response is pretty large in size, and in runtime requires ~ 3-4 seconds to work.
 
 * A creative fix instead of even calling all the current information of the problems on the platform, would be to use their API to call just the most recent submissions, as during a live contest, majority of the audience on the platform will actively be submitting solutions of the same contest.

@@ -11,7 +11,7 @@ The problem statements are fetched from the Codeforces programming platform (www
 
 ## How it works
 
-#### * How it identifies the contest
+####  How it identifies the contest
 Codeforces has a standard template of contest information -> Contest Number + Letter
 
 This pair uniquely defines every question on the platform. 
@@ -24,7 +24,7 @@ An alternative is to manually hard code 5 separate plug-ins, each that retrieves
 
 The advantage of using codeforces as the target platform is that the standard problem URL is - codeforces.com/contest_number/letter
 
-#### * How it retrieves the problem statement
+####  How it retrieves the problem statement
 The BeautifulSoup module in python, allows for web scraping. Consequently, after acquiring the correct link by leveraging the codeforces API, BeautifulSoup was used to scrape the problem statement off the webpage.
 
 ## Scope for improvements

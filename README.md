@@ -4,6 +4,8 @@
 <b> A sublime text 3 plugin by Aditya Ramesh </b>
 </p>
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![MIT License](https://img.shields.io/github/license/dawnlabs/carbon.svg)](https://github.com/dawnlabs/carbon/blob/master/LICENSE)
 
 ## What Code Faster is
 #### Code Faster is a Sublime Text 3 Plugin developed with the intent of fetching problem statements directly into the sublime text editor, without needing to open a browser.

@@ -18,8 +18,8 @@ class CodefasterCommand(sublime_plugin.TextCommand):
 		value = value[random.randint(0,len(value)-1)]
 
 		#value = max(value) #comment the above line and un-comment this line to retrieve the most recent contest's questions 
-		
-		goto_link = "http://codeforces.com/problemset/problem/" + str(value) + "/D" #change this last letter to A, B, C, D or E to pull the corresponding question
+		question_letter = ['A', 'B', 'C', 'D', 'E']
+		goto_link = "http://codeforces.com/problemset/problem/" + str(value) + "/" + question_letter[random.randint(0,4)] #change this last letter to a constant to pull the corresponding question
 		
 		route = 'Going to: ' + goto_link
 		#print(route)

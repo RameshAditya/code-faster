@@ -46,3 +46,9 @@ The BeautifulSoup module in python, allows for web scraping. Consequently, after
 * In addition, it's probably advisable to cache the requests being made as the JSON obtained in response is pretty large in size, and in runtime requires ~ 3-4 seconds to work.
 
 * A creative fix instead of even calling all the current information of the problems on the platform, would be to use their API to call just the most recent submissions, as during a live contest, majority of the audience on the platform will actively be submitting solutions of the same contest.
+
+## Future Plans
+* Fix the HTML tag parsing issue
+* Handle questions with embedded images - either automate the opening of the images alone in a browser, or directly open the same question in a browser due to lack of image support in- well, text editors.
+* Allow users to submit their solutions to the corresponding links.
+* Incorporate Machine Learning Algorithms to parse through user's submission history, and perform analysis of his submitted solutions, and pull recommended questions for the user to learn faster.

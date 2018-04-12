@@ -2,6 +2,28 @@
 {
     "id" : "codefaster",
     "caption" : "Codeforces for Adi",
-    "command" : "codefaster"
+    "children":
+    [
+    {
+    	"caption" : "Retrieve Level A",
+    	"command" : "codefastera", 
+    },
+
+    {	"caption" : "Retrieve Level B",
+    	"command" : "codefasterb"
+	},
+
+	{	"caption" : "Retrieve Level C",
+    	"command" : "codefasterc"
+	},
+
+	{	"caption" : "Retrieve Level D",
+    	"command" : "codefasterd"
+	},
+
+	{	"caption" : "Retrieve Level E",
+    	"command" : "codefastere"
+	}
+	]
 }
 ]

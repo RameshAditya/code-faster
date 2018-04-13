@@ -33,7 +33,7 @@ The codeforces API was used to find the current contest number, by requesting fo
 
 The letter (which is usually 'A', 'B', 'C', 'D' or 'E'} is manually entered by the user due to the input restrictions on sublime text plug-ins.
 
-An alternative is to manually hard code 5 separate plug-ins, each that retrieves questions corresponding to different letters of the same contest number. 
+~An alternative is to manually hard code 5 separate plug-ins, each that retrieves questions corresponding to different letters of the same contest number.~ UPDATE: This has been done now, and the "Codeforces for Adi" button now spawns a dropbox wherein the user can select the difficulty level they want a problem statement to be at.
 
 The advantage of using codeforces as the target platform is that the standard problem URL is - codeforces.com/contest_number/letter
 
@@ -45,10 +45,10 @@ The BeautifulSoup module in python, allows for web scraping. Consequently, after
 
 * In addition, it's probably advisable to cache the requests being made as the JSON obtained in response is pretty large in size, and in runtime requires ~ 3-4 seconds to work.
 
-* A creative fix instead of even calling all the current information of the problems on the platform, would be to use their API to call just the most recent submissions, as during a live contest, majority of the audience on the platform will actively be submitting solutions of the same contest.
+* A creative fix to minimize fetching time would be, to replace calling all the current information of the problems on the platform, and use their API to call just the most recent submissions, as during a live contest, majority of the audience on the platform will actively be submitting solutions of the same contest.
 
 ## Future Plans
 * Fix the HTML tag parsing issue
-* Handle questions with embedded images - either automate the opening of the images alone in a browser, or directly open the same question in a browser due to lack of image support in- well, text editors.
+* ~Handle questions with embedded images - either automate the opening of the images alone in a browser, or directly open the same question in a browser due to lack of image support in- well, text editors.~ UPDATE: This has now been done -- upon scraping the problem statement, if an image exists, Python's Selenium module is leveraged to retrieve the image URL and is opened in a new Firefox window.
 * Allow users to submit their solutions to the corresponding links.
 * Incorporate Machine Learning Algorithms to parse through user's submission history, and perform analysis of his submitted solutions, and pull recommended questions for the user to learn faster.

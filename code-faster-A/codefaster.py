@@ -15,6 +15,7 @@ goto_link = ''
 
 # quick fix to remove HTML Tags (if they show up in your questions, feel free to submit a pull request with a fix here!)
 def prettify(raw_html):
+	raw_html = raw_html.replace('<span class="tex-font-style-bf">', '')
 	raw_html = raw_html.replace("\le","<=")
 	raw_html = raw_html.replace("\lt","<")
 	raw_html = raw_html.replace("&lt;", '<')

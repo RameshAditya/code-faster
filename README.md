@@ -48,7 +48,7 @@ The BeautifulSoup module in python, allows for web scraping. Consequently, after
 * A creative fix to minimize fetching time would be, to replace calling all the current information of the problems on the platform, and use their API to call just the most recent submissions, as during a live contest, majority of the audience on the platform will actively be submitting solutions of the same contest.
 
 ## Future Plans
-* Fix the HTML tag parsing issue
+* Fix the HTML tag parsing issue.
 * ~Handle questions with embedded images - either automate the opening of the images alone in a browser, or directly open the same question in a browser due to lack of image support in- well, text editors.~ UPDATE: This has now been done -- upon scraping the problem statement, if an image exists, Python's Selenium module is leveraged to retrieve the image URL and is opened in a new Firefox window.
-* Allow users to submit their solutions to the corresponding links.
+* Allow users to submit their solutions to the corresponding links (from within Sublime Text 3)
 * Incorporate Machine Learning Algorithms to parse through user's submission history, and perform analysis of his submitted solutions, and pull recommended questions for the user to learn faster.

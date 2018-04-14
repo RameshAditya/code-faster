@@ -7,7 +7,6 @@ import json
 from bs4 import BeautifulSoup
 from collections import Counter
 import sys
-import mechanicalsoup
 
 sys.path.insert(0, '/Users/Aditya/AppData/Local/Programs/Python/Python36-32/Lib/site-packages')
 from selenium import webdriver
